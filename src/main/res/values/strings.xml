@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FSD Pricing</string>
+
+    <!-- Strings para os App Shortcuts -->
+    <string name="shortcut_short_label_orcamentos">Orçamentos</string>
+    <string name="shortcut_long_label_orcamentos">Ver Orçamentos</string>
+
+    <string name="shortcut_short_label_historico">Histórico</string>
+    <string name="shortcut_long_label_historico">Ver Histórico</string>
+
+    <string name="shortcut_short_label_perfil">Perfil</string>
+    <string name="shortcut_long_label_perfil">Ver Perfil</string>
+</resources>

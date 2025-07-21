@@ -1,0 +1,43 @@
+android {
+    compileSdk 34
+    defaultConfig {
+        applicationId "com.fsd.pricing"
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0.0"
+    }
+    signingConfigs {
+        release {
+            storeFile file("../keystore/fsd_keystore.jks")
+            storePassword "fsdpricing25"
+            keyAlias "fsd_key"
+            keyPassword "fsd@2025"
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersionersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    splits {
+        abi {
+            enable true
+            reset()
+            // Inclui todas as ABIs comuns
+            include 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+            universalApk false // Gera APKs separados para cada ABI
+        }
+    }
+}
+dependencies {
+    implementation 'androidx.browser:browser:1.7.0'
+    implementation 'com.google.code.gson:gson:2.10.1'
+}

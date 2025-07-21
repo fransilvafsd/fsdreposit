@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="atalho_orcamentos"
+        android:enabled="true"
+        android:icon="@drawable/ic_orcamentos"
+        android:shortcutShortLabel="@string/shortcut_short_label_orcamentos"
+        android:shortcutLongLabel="@string/shortcut_long_label_orcamentos">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://fransilvadesign.github.io/fsd-pricing/orcamentos/"
+            android:targetPackage="com.fsd.pricing" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="atalho_historico"
+        android:enabled="true"
+        android:icon="@drawable/ic_historico"
+        android:shortcutShortLabel="@string/shortcut_short_label_historico"
+        android:shortcutLongLabel="@string/shortcut_long_label_historico">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://fransilvadesign.github.io/fsd-pricing/histórico/"
+            android:targetPackage="com.fsd.pricing" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="atalho_perfil"
+        android:enabled="true"
+        android:icon="@drawable/ic_perfil"
+        android:shortcutShortLabel="@string/shortcut_short_label_perfil"
+        android:shortcutLongLabel="@string/shortcut_long_label_perfil">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://fransilvadesign.github.io/fsd-pricing/perfil/"
+            android:targetPackage="com.fsd.pricing" />
+    </shortcut>
+</shortcuts>

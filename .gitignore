@@ -1,0 +1,38 @@
+# Arquivos de build gerados
+build/
+.gradle/
+
+# Arquivos de IDE (Android Studio, VS Code)
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Arquivos temporários
+*.apk
+*.aab
+*.aar
+captures/
+.externalNativeBuild/
+
+# Arquivos de dependências
+**/node_modules/
+
+# Arquivos de keystore (muito importante NÃO commitar!)
+*.jks
+*.keystore
+
+# Arquivos de log e debug
+*.log
+
+# Arquivos do Gradle Wrapper (geralmente incluídos, mas se quiser ignorar)
+!gradle-wrapper.jar
+!gradlew
+!gradlew.bat
+
+# Arquivos aiexclude (se usar)
+.aiexclude
+
+# Outros arquivos que podem ser gerados
+local.properties

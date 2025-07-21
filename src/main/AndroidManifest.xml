@@ -1,0 +1,25 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fsd.pricing">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:label="FSD Pricing"
+        android:icon="@mipmap/ic_launcher">
+        <activity
+            android:name="androidx.browser.trusted.TrustedWebActivityLauncherActivity"
+            android:exported="true"
+            android:theme="@style/Theme.TrustedWebActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.support.customtabs.trusted.DEFAULT_URL"
+                android:value="https://fransilvadesign.github.io/fsd-pricing/" />
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+    </application>
+</manifest>
