@@ -1,0 +1,1 @@
+// Exemplo de conteúdo para service-worker.js
